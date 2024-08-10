@@ -1,2 +1,5 @@
-# census-questions-app
-The front end interface for using the census-questions api to get data about a country. Will potentially have a data visualization aspect as well.
+# Census Questions
+Use generative AI to answer questions about the United States with data from the U.S. Census Bureau.
+
+# Quick Start
+
