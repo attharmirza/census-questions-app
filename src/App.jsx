@@ -3,7 +3,10 @@ import './App.css'
 function App() {
   return (
     <>
-      Hello world!
+      <div>
+        <input />
+        <button>🚀</button>
+      </div>
     </>
   )
 }
