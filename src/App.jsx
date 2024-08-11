@@ -1,14 +1,10 @@
+import Input from './components/Input'
 import './App.css'
 
-function App() {
+export default function App() {
   return (
     <>
-      <div>
-        <input />
-        <button>🚀</button>
-      </div>
+      <Input />
     </>
   )
 }
-
-export default App
