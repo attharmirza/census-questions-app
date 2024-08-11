@@ -1,0 +1,19 @@
+.container {
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.aideLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.aideLogo img {
+  width: 180px;
+}
+
+
+
+
+
