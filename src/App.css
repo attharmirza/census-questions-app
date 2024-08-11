@@ -108,10 +108,20 @@
   /* font-family:arial black; */
   /* font-size:70px; */
   background-image: 
-    linear-gradient(to right, blue, cyan ); 
+  linear-gradient(to right, blue, rgb(0, 149, 255) ); 
   -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
   animation: rainbow-animation 100s linear infinite;
+}
+
+.background-animation {
+  /* font-family:arial black; */
+  /* font-size:70px; */
+  background-image: 
+    linear-gradient(to right, blue, rgb(0, 149, 255) ); 
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent;   */
+  animation: rainbow-animation 500s linear infinite;
 }
 
 @keyframes rainbow-animation {
@@ -119,3 +129,4 @@
         background-position:4500vh;
     }
 }
+

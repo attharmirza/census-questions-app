@@ -8,7 +8,7 @@
 }
 
 input {
-    width: 100%;
+    width: 85%;
     max-width: 640px;
     font-size: 18px;
     margin-right: 4px;
@@ -16,9 +16,12 @@ input {
     height: 100%;
   }
   
-  button {
-    min-width: 30px;
+button {
+    width: 14%;
     max-width: 60px;
     font-size: 18px;
     height: 100%;
-  }
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}

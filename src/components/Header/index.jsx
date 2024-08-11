@@ -11,7 +11,7 @@ export default function Header() {
             Newsroom <span className='press-start-2p-regular silkscreen-bold fs-headline text-animation'> Robot AI</span>de
             </h1>
 
-            <p className={styles.container}>
+            <p className={`${styles.description}`}>
               Your newsroom AIde to collect, analyze and visualize data from the U.S. Census.
             </p>
         </>

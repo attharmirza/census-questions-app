@@ -10,7 +10,7 @@ export default function Input() {
                 name="question"
                 placeholder='Type a question...'
                 />
-                <button>Ask</button>
+                <button className='background-animation'>Ask</button>
             </div>
         </>
     )
