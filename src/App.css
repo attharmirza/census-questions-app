@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Press+Start+2P&display=swap');
 
 /* FONTS */
+
 .alfa-slab-one-regular {
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
@@ -12,6 +13,8 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* FONT SIZES AND TYPES */
 
 .fs-lg {
   font-size: 3em;
@@ -48,35 +51,41 @@
 }
 
 /* FONTS */
-
-.body {
-  min-height: 100vh;
-  height: 100vh;
-}
-
 .app-container {
   background-color: #f7f7f7;
-  /* width: 100%;
-  height: 100vh;
-  position: relative; */
-  display: grid;
-  place-items: center;
-  /* justify-content: center; */
-  height: 100%;
-  width: 100%;
-}
-
-.app-components {
+  min-width: calc(100% - 2rem);
+  min-height: calc(100vh - 2rem);
   padding: 1rem;
 }
 
+.app-header,.app-body {
+  max-width: 900px;
+  margin: auto;
+}
 
+.app-header {
+  min-height: calc(500px + 1rem);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.app-body {
+  display: grid;
+  place-items: center;
+  margin-bottom: 4rem;
+}
+
+/* BUTTONS */
+a,input,button {
+  outline-offset: 3px;
+}
 
 /* ANIMATIONS */
 
 .text-animation {
-  /* font-family:arial black; */
-  /* font-size:70px; */
   background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
   background-clip: text;
   -webkit-background-clip: text;
@@ -85,13 +94,15 @@
 }
 
 .background-animation {
-  /* font-family:arial black; */
-  /* font-size:70px; */
   background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent;   */
   animation: rainbow-animation 500s linear infinite;
 }
+
+.background-animation-wide {
+  background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
+  animation: rainbow-animation 200s linear infinite;
+}
+
 
 @keyframes rainbow-animation {
   to {

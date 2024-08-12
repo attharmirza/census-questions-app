@@ -1,0 +1,32 @@
+.container {
+    margin-top: 1rem;
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+    row-gap: 1rem;
+}
+
+.description {
+    /* font-size: 0.7rem; */
+    margin-bottom: 0;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    min-height: 50px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    animation: none;
+    background-image: none;
+    background-color: black;
+}

@@ -1,7 +1,17 @@
 {
-  "name": "census-questions-app",
+  "name": "census-newsroom-aide-app",
+  "description": "An AI powered reporter's tool to query, collect, analyze and visualize data from the U.S. Census Bureau.",
+  "keywords": [
+    "ai",
+    "generative",
+    "census",
+    "data",
+    "analysis",
+    "chatbot",
+    "app"
+  ],
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "start": "vite",

@@ -1,7 +1,7 @@
 .container {
-    margin: auto;
     text-align: center;
-    height: 50px;
+    min-height: 50px;
+    width: 100%;
     display: grid;
     grid-template-columns: 5fr minmax(auto, 60px);
     margin-top: 2em;
@@ -11,13 +11,20 @@
 .input {
     font-size: 18px;
     text-indent: 10px;
-    height: 100%;
+    border: 1px solid black;
+}
+
+.input 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
 }
 
 .button {
     max-width: 60px;
     font-size: 18px;
-    height: 100%;
     background-color: blue;
     color: white;
     border: 1px solid black;
@@ -27,7 +34,15 @@
     cursor: pointer;
 }
 
-.button:active {
+.button-enabled {
+    pointer-events: auto;
+    animation: inherit;
+    background-image: inherit;
+    background-color: blue;
+}
+
+.button-disabled {
+    pointer-events: none;
     animation: none;
     background-image: none;
     background-color: black;
