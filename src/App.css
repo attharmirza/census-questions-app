@@ -1,54 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Foldit:wght@100..900&family=Lobster&family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Foldit:wght@100..900&family=Lobster&family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Foldit:wght@100..900&family=Lobster&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Press+Start+2P&display=swap');
 
 /* FONTS */
-
 .alfa-slab-one-regular {
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.lobster-regular {
-  font-family: "Lobster", sans-serif;
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-
-.bungee-regular {
-  font-family: "Bungee", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.silkscreen-regular {
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.silkscreen-bold {
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* https://fonts.google.com/specimen/Foldit */
-/* <uniquifier>: Use a unique and descriptive class name */
-/* <weight>: Use a value from 100 to 900 */
-.foldit-font {
-  font-family: "Foldit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-
 
 .fs-lg {
   font-size: 3em;
@@ -75,11 +38,15 @@
   color: blue;
 }
 
-.press-start-2p-regular {
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.fs-link {
+  text-decoration: none;
+  color: blue;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
 }
+
 /* FONTS */
 
 .body {
@@ -92,41 +59,42 @@
   /* width: 100%;
   height: 100vh;
   position: relative; */
-  display: flex;
-  align-items: center;
+  display: grid;
+  place-items: center;
   /* justify-content: center; */
   height: 100%;
-}
-
-.app-components {
   width: 100%;
 }
 
+.app-components {
+  padding: 1rem;
+}
 
+
+
+/* ANIMATIONS */
 
 .text-animation {
   /* font-family:arial black; */
   /* font-size:70px; */
-  background-image: 
-  linear-gradient(to right, blue, rgb(0, 149, 255) ); 
+  background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
+  background-clip: text;
   -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-  animation: rainbow-animation 100s linear infinite;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 300s linear infinite;
 }
 
 .background-animation {
   /* font-family:arial black; */
   /* font-size:70px; */
-  background-image: 
-    linear-gradient(to right, blue, rgb(0, 149, 255) ); 
+  background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
   /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent;   */
   animation: rainbow-animation 500s linear infinite;
 }
 
 @keyframes rainbow-animation {
-    to {
-        background-position:4500vh;
-    }
+  to {
+    background-position: 4500vh;
+  }
 }
-

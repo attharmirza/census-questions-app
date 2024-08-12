@@ -4,15 +4,15 @@ export default function Header() {
     return (
         <>
             <div className={styles.aideLogo}>
-            <img src="./public/img/robot-aide.png" alt="Robot AIde icon" />
+                <img src="./public/img/robot-aide.png" alt="Robot AIde icon" />
             </div>
 
             <h1 className={`${styles.container} fs-lg alfa-slab-one-regular`}>
-            Newsroom <span className='press-start-2p-regular silkscreen-bold fs-headline text-animation'> Robot AI</span>de
+                Census Newsroom <span className='press-start-2p-regular silkscreen-bold fs-headline text-animation'>AI</span>de
             </h1>
 
             <p className={`${styles.description}`}>
-              Your newsroom AIde to collect, analyze and visualize data from the U.S. Census.
+                Collect, analyze and visualize data from the <a className="fs-link" target="_blank" rel="noopener noreferrer" href='https://www.census.gov/'><b>U.S. Census Bureau</b></a>.
             </p>
         </>
     )
