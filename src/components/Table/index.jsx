@@ -1,14 +1,17 @@
 import styles from './index.module.css'
+import Card from './Card'
 
 export default function Table(props) {
     const { data } = props
 
-    const placeholder = (<p className={styles.paragraph}>Ask any question related to the latest year of U.S. Census data and get back the data needed to answer it (e.g. "What's the population of the United States broken down by age?").</p>)
+    if (!data) return
+
+    const cards = data.map(d => (<Card dataSingle={d}/>))
 
     return (
         <>
-            <div className={styles.container}>
-                {data ? JSON.stringify(data) : placeholder}
+            <div className={styles.container} style={{gridTemplateRows: `repeat(${cards.length},1fr)`}}>
+                {cards}
             </div>
         </>
     )

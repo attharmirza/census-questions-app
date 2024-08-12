@@ -1,0 +1,6 @@
+.container {
+    width: calc(100% - 2rem);
+    border: 1px dashed black;
+    background-color: white;
+    padding: 1rem;
+}
