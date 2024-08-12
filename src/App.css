@@ -72,9 +72,13 @@
 .app-body {
   display: grid;
   place-items: center;
+  margin-bottom: 4rem;
 }
 
-
+/* BUTTONS */
+a,input,button {
+  outline-offset: 3px;
+}
 
 /* ANIMATIONS */
 
@@ -90,6 +94,12 @@
   background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
   animation: rainbow-animation 500s linear infinite;
 }
+
+.background-animation-wide {
+  background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
+  animation: rainbow-animation 200s linear infinite;
+}
+
 
 @keyframes rainbow-animation {
   to {

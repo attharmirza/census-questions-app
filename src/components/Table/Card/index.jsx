@@ -7,7 +7,7 @@ export default function Card(props) {
         <>
             <div className={styles.container}>
                 <div>{dataSingle.NAME}</div>
-                <div>{JSON.stringify(dataSingle)}</div>
+                <div>{JSON.stringify(dataSingle.CATEGORIES)}</div>
             </div>
         </>
     )
