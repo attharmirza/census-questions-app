@@ -7,6 +7,11 @@ Use generative AI to answer questions about the United States with data from the
 2. Run `yarn` to install dependencies and `yarn start` to launch a local server.
 3. Open the server address (usually `http://localhost:5173/`) in your browser of choice and enjoy the application!
 
+## Requirements 
+
+- [Node.js](https://nodejs.org/en/download/package-manager) (v20.16.0)
+- [Yarn](https://classic.yarnpkg.com/en/) (v1.22.22)
+
 ## Installation
 
 This project requires [Node.js v20.16.0](https://nodejs.org/en/download/package-manager). In additon, [nvm](https://github.com/nvm-sh/nvm) (or [nvm-windows](https://github.com/coreybutler/nvm-windows)) is highly recommended for managing node versions.
