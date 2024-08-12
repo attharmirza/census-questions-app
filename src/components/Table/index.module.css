@@ -1,0 +1,9 @@
+.container {
+    margin-top: 2em;
+    max-width: 900px;
+}
+
+.paragraph {
+    max-width: 500px;
+    margin: auto;
+}

@@ -1,17 +1,23 @@
-import Header from './components/Header'
-import Input from './components/Input'
-
+import { Header, Input, Table } from './components'
+import { useState } from 'react'
 import './App.css'
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(false)
+  const readLoadingStatus = (status) => setIsLoading(status)
+
+  const [data, setData] = useState(undefined)
+  const readCensusData = (data) => setData(data)
+
   return (
     <>
-      <div className="body">
-        <div className="app-container">
-          <div className="app-components">
-            <Header />
-            <Input />
-          </div>
+      <div className="app-container">
+        <div className="app-header">
+          <Header />
+          <Input loadingStatus={readLoadingStatus} censusData={readCensusData} />
+        </div>
+        <div className='app-body'>
+          {isLoading ? null : <Table data={data} />}
         </div>
       </div>
     </>
