@@ -17,7 +17,7 @@ export default function App() {
           <Input loadingStatus={readLoadingStatus} censusData={readCensusData} />
         </div>
         <div className='app-body'>
-          {isLoading ? null : <Table data={data} />}
+          {isLoading ? <img src='./img/loading.gif' style={{filter: 'brightness(0%)'}}/> : <Table data={data} />}
         </div>
       </div>
     </>

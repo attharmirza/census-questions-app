@@ -13,11 +13,13 @@ export default function Table(props) {
             <div className={styles.container} style={{gridTemplateRows: `auto`}}>
                 <p className={`press-start-2p-regular ${styles.description}`}>Census Data Type: <span className='text-animation'>{data[0].DESCRIPTION}</span></p>
                 {cards}
-                <button
+                <a
                     className={`background-animation-wide ${styles.button}`}
+                    href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data))}`}
+                    download='data.json'
                 >
                     Download
-                </button>
+                </a>
             </div>
         </>
     )
