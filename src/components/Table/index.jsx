@@ -6,12 +6,12 @@ export default function Table(props) {
 
     if (!data) return
 
-    const cards = data.map(d => (<Card key={d.NAME} dataSingle={d}/>))
+    const cards = data.map(d => (<Card key={d.NAME} dataSinglePlace={d}/>))
 
     return (
         <>
-            <div className={styles.container} style={{gridTemplateRows: `auto repeat(${cards.length},1fr)`}}>
-                <p className={styles.container}>{data[0].DESCRIPTION}</p>
+            <div className={styles.container} style={{gridTemplateRows: `auto`}}>
+                <p className={`press-start-2p-regular ${styles.description}`}>Census Data Type: <span className='text-animation'>{data[0].DESCRIPTION}</span></p>
                 {cards}
                 <button
                     className={`background-animation-wide ${styles.button}`}

@@ -14,8 +14,6 @@ export async function getData(prompt) {
     try {
         const response = await fetch(url)
 
-        console.log(response)
-
         const json = await response.json()
 
         return json

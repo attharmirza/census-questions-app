@@ -5,7 +5,7 @@ export default function Header() {
         <>
             <div>
                 <div className={styles.aideLogo}>
-                    <img src="./public/img/robot-aide.png" alt="Robot AIde icon" />
+                    <img src="./img/robot-aide.png" alt="Robot AIde icon" />
                 </div>
 
                 <h1 className={`${styles.container} fs-lg alfa-slab-one-regular`}>

@@ -6,8 +6,9 @@
     row-gap: 1rem;
 }
 
-.container p {
-    margin: 0;
+.description {
+    /* font-size: 0.7rem; */
+    margin-bottom: 0;
 }
 
 .button {
