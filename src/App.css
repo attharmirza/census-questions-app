@@ -47,7 +47,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, blue, rgb(0, 149, 255));
+  background-image: linear-gradient(to top, blue, rgb(0, 149, 255));
 }
 
 /* FONTS */
