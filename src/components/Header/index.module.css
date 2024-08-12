@@ -1,0 +1,27 @@
+.container {
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.description {
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+
+.aideLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.aideLogo img {
+  width: 180px;
+}
+
+
+
+
+

@@ -6,8 +6,14 @@ import './App.css'
 export default function App() {
   return (
     <>
+    <div className="body">
+    <div className="app-container">
+    <div className="app-components">
       <Header/>
       <Input />
+    </div>
+    </div>
+    </div>
     </>
   )
 }

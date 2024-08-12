@@ -1,4 +1,27 @@
 .container {
-    background-color: red;
-    width: 500px;
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    height: 50px;
+}
+
+input {
+    width: 85%;
+    max-width: 640px;
+    font-size: 18px;
+    margin-right: 4px;
+    text-indent: 10px;
+    height: 100%;
+  }
+  
+button {
+    width: 14%;
+    max-width: 60px;
+    font-size: 18px;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
 }
