@@ -11,6 +11,10 @@
     margin-bottom: 0;
 }
 
+.error {
+    color: red
+}
+
 .button {
     text-align: center;
     width: 100%;

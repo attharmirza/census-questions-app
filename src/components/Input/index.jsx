@@ -16,7 +16,7 @@ export default function Input(props) {
         try {
             data = await getData(inputRef.current.value)
         } catch (err) {
-            data = undefined
+            data = 'ERROR'
             console.error(err)
         }
 
