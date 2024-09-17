@@ -5,9 +5,9 @@
  * @returns {JSON}
  */
 export async function getData(prompt) {
-    let url = new URL('https://api.census.gov/')
+    let url = new URL('http://localhost:8080/')
 
-    url.hostname = 'us-east4-census-questions.cloudfunctions.net'
+    // url.hostname = 'us-east4-census-questions.cloudfunctions.net'
     url.pathname = 'answer-question'
     url.searchParams.set('prompt', prompt)
 

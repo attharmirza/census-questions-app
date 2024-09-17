@@ -11,11 +11,14 @@ export default function Table(props) {
         if (data === 'ERROR') {
             setContent((<p className={`press-start-2p-regular ${styles.description} ${styles.error}`}>Error Fetching Data</p>))
         } else if (data) {
-            const cards = data.map(d => (<Card key={d.NAME} dataSinglePlace={d} />))
+            const dataRows = data.data
+
+            const cards = dataRows.map(d => (<Card key={d.name} dataSinglePlace={d} />))
 
             setContent((
                 <>
-                    <p className={`press-start-2p-regular ${styles.description}`}>Census Data Type: <span className='text-animation'>{data[0].DESCRIPTION}</span></p>
+                    {data.analysis ? <p className={`${styles.analysis}`}>{data.analysis}</p> : <></>}
+                    <p className={`press-start-2p-regular ${styles.description}`}>Census Data Type: <span className='text-animation'>{dataRows[0].groupLabel}</span></p>
                     {cards}
                     <a
                         className={`background-animation-wide ${styles.button}`}
