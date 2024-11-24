@@ -13,7 +13,7 @@ export default function Header() {
                 </h1>
 
                 <p className={`${styles.description}`}>
-                    An AI powered reporter's tool to query, collect, analyze and visualize data from the <a className="fs-link" target="_blank" rel="noopener noreferrer" href='https://www.census.gov/'><b>U.S. Census Bureau</b></a>.
+                    An AI powered reporter's tool to query, collect, analyze and visualize <a className="fs-link" target="_blank" rel="noopener noreferrer" href='https://www.census.gov/'><b>census data</b></a>.
                 </p>
             </div>
         </>
