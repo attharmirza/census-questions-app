@@ -11,6 +11,16 @@
     margin-bottom: 0;
 }
 
+.analysis {
+    width: calc(100% - 2rem);
+    border: 1px dashed black;
+    background-color: white;
+    padding: 1rem;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
 .error {
     color: red
 }

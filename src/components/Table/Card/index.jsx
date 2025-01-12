@@ -12,14 +12,14 @@ export default function Card(props) {
         return labelParsed.map(label => (<span key={label} className={styles.label}>{label}</span>))
     }
 
-    const categories = dataSinglePlace.CATEGORIES.map(d =>
+    const categories = dataSinglePlace.categories.map(d =>
     (
-        <div key={d.ID} className={styles.category}>
+        <div key={d.variableID} className={styles.category}>
             <div>
-                <span className={`press-start-2p-regular ${styles.value}`}>{(+d.VALUE).toLocaleString('en-US')}</span>
+                <span className={`press-start-2p-regular ${styles.value}`}>{(+d.value).toLocaleString('en-US')}</span>
             </div>
             <div>
-                <span className={styles.labels}>{parseLabel(d.LABEL)}</span>
+                <span className={styles.labels}>{parseLabel(d.variableLabel)}</span>
             </div>
         </div>
     ))
@@ -27,7 +27,7 @@ export default function Card(props) {
     return (
         <>
             <div className={styles.container}>
-                <div className={`alfa-slab-one-regular ${styles.place}`}>{dataSinglePlace.NAME}</div>
+                <div className={`alfa-slab-one-regular ${styles.place}`}>{dataSinglePlace.name}</div>
                 <div className={styles.categories}>
                     {categories}
                 </div>
